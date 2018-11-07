@@ -1,14 +1,19 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-title>Discord Servers</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content pendding>
+
+    <ion-card *ngFor="let i of discord.guilds" class= "card-background-page">
+      <ion-card>
+          <img src="../../assets/imgs/discord-logo.jpg"/>
+          <div class="card-title">{{i.name}}</div>
+          <div class="card-subtitle">{{i.channels.size}} canais</div>
+        </ion-card>
+  </ion-card>
+
+
 </ion-content>

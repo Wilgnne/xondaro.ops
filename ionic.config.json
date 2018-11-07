@@ -1,5 +1,7 @@
 {
   "name": "xondaro.ops",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
